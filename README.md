@@ -35,6 +35,7 @@ You can use also other tools rather than Postman.
 ## Installation
 
 * Clone data from Git with following command
+
 [prompt]git clone git@github.com:atipi/FlaskMongodbRESTApi_Demo.git
 
 * [prompt]cd FlaskMongodbRESTApi_Demo
