@@ -32,40 +32,55 @@ Supported end points:
 
 You can use also other tools rather than Postman.
 
+Note for Mac users:
+
+pipenv seems to have some problem with Python 3.7* so you could also try with other tools for example pip3.
+
+Here is some useful link about pipenv:
+
+* https://pypi.org/project/pipenv/
+
+
 ## Installation
 
 * Clone data from Git with following command
 
-[prompt]git clone git@github.com:atipi/FlaskMongodbRESTApi_Demo.git
+[prompt] git clone git@github.com:atipi/FlaskMongodbRESTApi_Demo.git
 
-* [prompt]cd FlaskMongodbRESTApi_Demo
+* [prompt] cd FlaskMongodbRESTApi_Demo
 
-* [prompt]pipenv shell
+* [prompt] pipenv shell
 
-* [prompt]pipenv install
+* [prompt] pipenv install
 
 ## Usage
 
 ### For Ubuntu user
 
-* [prompt]cd FlaskMongodbRESTApi_Demo
+* [prompt] cd FlaskMongodbRESTApi_Demo
 
-* [prompt]pipenv shell
+* [prompt] pipenv shell
 
-* [prompt]source set_env_DEV.sh
+* [prompt] source set_env_DEV.sh
 
-* [prompt]flask run
+Alternatively you can execute below commands if you don't want to run above command:
 
-* start testing via Postman
+1) export FLASK_APP='api'
+
+2) export FLASK_ENV='development'
+
+* [prompt] flask run
+
+* start testing via Postman or tool of your choice
 
 ## Testing
 
 ### For unit testing
 
-* [prompt]cd FlaskMongodbRESTApi_Demo
+* [prompt] cd FlaskMongodbRESTApi_Demo
 
-* [prompt]pipenv shell
+* [prompt] pipenv shell
 
-* [prompt]python -m unittest tests/test_api.py
+* [prompt] python -m unittest tests/test_api.py
 
 
