@@ -149,7 +149,7 @@ class Song(object):
             songs = self._mongo.db.songs.find().limit(int(page_size))
         else:
             if page_number > 1:
-                next_skip = ( int(page_size) * int(page_number) ) - 1
+                next_skip = (int(page_size) * int(page_number)) - 1
                 songs = self._mongo.db.songs.find().skip(next_skip).limit(int(page_size))
 
         output = convert_to_list(songs)

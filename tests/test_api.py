@@ -46,7 +46,7 @@ class TestSongApi(unittest.TestCase):
 
     def test_add_song(self):
         params_dict = {
-            "artist": "The Yousicians",
+            "artist": "Vanu Muru",
             "title": "Wishing In The Night",
             "difficulty": 10.98,
             "level": 9,
@@ -118,7 +118,7 @@ class TestSongApi(unittest.TestCase):
 
     def test_rate_song_missing_song_id_params(self):
         params_dict = {
-            "artist": "The Yousicians",
+            "artist": "Vanu Muru",
         }
         response = self.client.post('/songs/rating',
                                     data=json.dumps(params_dict),
@@ -154,7 +154,7 @@ class TestSongApi(unittest.TestCase):
 
     def test_rate_song(self):
         params_dict = {
-            "artist": "The Yousicians",
+            "artist": "Vanu Muru",
             "title": "Greasy Fingers - boss level",
             "difficulty": 2,
             "level": 3,

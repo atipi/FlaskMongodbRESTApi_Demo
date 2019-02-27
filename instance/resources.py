@@ -20,7 +20,6 @@ class BaseResource(Resource):
     _is_test_mode = 0
 
     def __init__(self, **kwargs):
-        # app.logger.debug('Arguments kwargs in __init__: %s', kwargs)
         config_name = kwargs['config_name']
         if config_name == 'testing':
             self._is_test_mode = 1
